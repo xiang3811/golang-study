@@ -11,10 +11,13 @@
  
 ::echo .....!!!!git checkout master （执行git命令：切换至master分支）
 ::git checkout master
- 
+echo //////look status 
 git status
+echo //////add all file
 git add -A --all
+echo //////commit file
 git commit -m "bat auto commit log"
+echo ///push to server
 ::git push origin master
 git push default simple
 
