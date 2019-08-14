@@ -16,7 +16,7 @@ git status
 git add -A --all
 git commit -m "bat auto commit log"
 ::git push origin master
-git push.default simple
+git push default simple
 
 echo ///////////////////////task done
 
