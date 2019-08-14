@@ -1,4 +1,6 @@
 @echo off
+::The current program needs to be executed.
+::the CMD directory under the installation path needs to be added to the system environment Path variable.
 
 ::echo .....Jump to folder E:\komi\komiTest（跳转至该路径，是一个git项目，应该会有一个.git文件夹。如果这个bat文件已经在git项目路径下了，可以不用跳转，直接写git命令，会对该git项目直接进行操作）
 ::cd /d E:\komi\komiTest
