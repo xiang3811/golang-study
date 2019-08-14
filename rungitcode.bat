@@ -9,6 +9,7 @@
 git status
 git add -A --all
 git commit -m "bat auto commit log"
+git push origin master
  
 echo .....enter any key to exit（想要bat文件执行完可以看到日志，而不是自动关闭，用以下方式可以实现：pause>nul）
 pause
