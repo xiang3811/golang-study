@@ -16,10 +16,13 @@ git status
 echo //////add all file
 git add -A --all
 echo //////commit file
-git commit -m "bat auto commit log"
+:RecVar
+set /p Var=Please Input commit log:
+if "%Var%"=="" goto RecVar
+git commit -m "%Var%"
 echo ///push to server
 ::git push origin master
-git push default simple
+git push
 
 echo ///////////////////////task done
 
