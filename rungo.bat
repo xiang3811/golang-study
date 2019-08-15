@@ -1,8 +1,7 @@
 @echo off
 echo ///////////////run go file///////////////
-go run test.go
-echo ///////////////build go file///////////////
-go build test.go
-echo ///////////////run build file///////////////
-test.exe
+:RecVar
+set /p Var=Please Input run go file:
+if "%Var%"=="" goto RecVar
+go run %Var%
 pause

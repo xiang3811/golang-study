@@ -1,0 +1,8 @@
+@echo off
+echo ///////////////run go file///////////////
+go run test.go
+echo ///////////////build go file///////////////
+go build test.go
+echo ///////////////run build file///////////////
+test.exe
+pause
