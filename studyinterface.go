@@ -1,34 +1,19 @@
 package main
 
-import (
-    "fmt"
-)
-
-type Phone interface {
-    call()
-}
-
-type NokiaPhone struct {
-}
-
-func (nokiaPhone NokiaPhone) call() {
-    fmt.Println("I am Nokia, I can call you!")
-}
-
-type IPhone struct {
-}
-
-func (iPhone IPhone) call() {
-    fmt.Println("I am iPhone, I can call you!")
-}
+import "fmt"
 
 func main() {
-    var phone Phone
+	add_func := add(1, 2)
+	fmt.Println(add_func(1, 1))
+	fmt.Println(add_func(0, 0))
+	fmt.Println(add_func(2, 2))
+}
 
-    phone = new(NokiaPhone)
-    phone.call()
-
-    phone = new(IPhone)
-    phone.call()
-
+// 闭包使用方法
+func add(x1, x2 int) func(x3 int, x4 int) (int, int, int) {
+	i := 0
+	return func(x3 int, x4 int) (int, int, int) {
+		i++
+		return i, x1 + x2, x3 + x4
+	}
 }
